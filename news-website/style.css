@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-template-rows: 0.2fr 0.06fr 0.3fr;
+}
+
+.header {
+    display: flex;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    width: 200px;
+    height: 60px;
+}
+
+.advertise {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.advertise > img {
+    width: 100%;
+    height: 100%;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.search > input {
+    height: 30px;
+    width: 100%;
+}
+
+.navbar {
+    background: #FF6F61;
+}
+
+.news-section1 {
+    background: lightslategrey;
+}
+
+/* navbar */
+
+.nav-container {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    height: 100%;
+    display: flex;
+}
+
+.nav-section1 {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-section1 > ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-section1 > ul > li {
+    padding-right: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-section2 {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-section2 > ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-section2 > ul > li {
+    margin-left: 10px;
+    padding: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
+    border-width: 1px;
+    width: 15px;
+    height: 15px;
+    align-self: center;
+    justify-self: center;
+}
+
+.nav-section2 > ul > li > a > i {
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 880px) {
+    .advertise {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .advertise {
+        margin-bottom: 20px;
+        padding-left: 0px;
+    }
+    .logo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .search {
+        margin-left: 0px;
+    }
+}

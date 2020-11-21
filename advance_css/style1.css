@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background:#4d4d4d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square {
+    width: calc(100vw * 0.4);
+    height: calc(100vw * 0.4);
+    background: chartreuse;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 2px;
+    padding: 2px;
+}
+
+.box {
+    background: darkblue;
+}
+
+.box1 {
+    background: red;
+}
